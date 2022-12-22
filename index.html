@@ -36,14 +36,18 @@
   <div class="row">
     <form class="col s12">
       <div class="row p-4 z-depth-2">
-        <div class="input-field col s6">
+        <br />
+
+        <div class="input-field col s12">
           <input  id="input-url" type="text" class="validate">
           <label for="input-url">Url</label>
         </div>
-        <div class="input-field col s6">
+
+        <div class="input-field col s12">
           <input id="input-selector" type="text" class="validate">
           <label for="input-selector">QuerySelector</label>
         </div>
+        <br />
       </div>
       <div class="row center">
       <div class="row">
@@ -100,6 +104,9 @@ scrapeButton.addEventListener("click", () => {
   // Get the URL and selector from the input fields
   const url = inputUrl.value;
   const selector = inputSelector.value;
+
+  //alert(url);
+  //alert(selector);
 
   // Make a request to the URL
   fetch(url)
